@@ -1,0 +1,258 @@
+{
+  "url": "https://jobs.ashbyhq.com/wander/121c24e0-eeff-49a8-ac56-793d2dbc9fcd/application",
+  "extracted_at": "2025-05-30T22:13:44.774402",
+  "fields": [
+    {
+      "type": "input",
+      "input_type": "text",
+      "name": "_systemfield_name",
+      "id": "_systemfield_name",
+      "label": "Name",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "input[name='_systemfield_name']"
+    },
+    {
+      "type": "input",
+      "input_type": "email",
+      "name": "_systemfield_email",
+      "id": "_systemfield_email",
+      "label": "Email",
+      "placeholder": "hello@example.com...",
+      "required": true,
+      "selector": "input[name='_systemfield_email']"
+    },
+    {
+      "type": "input",
+      "input_type": "file",
+      "name": "",
+      "id": "_systemfield_resume",
+      "label": "Resume",
+      "placeholder": "",
+      "required": true,
+      "selector": "input[id='_systemfield_resume']"
+    },
+    {
+      "type": "input",
+      "input_type": "text",
+      "name": "435dea9d-d702-4af5-99f9-f520fc7c76e5",
+      "id": "435dea9d-d702-4af5-99f9-f520fc7c76e5",
+      "label": "Share any online profiles (Linkedin, Github, Website, Portfolio, Twitter, etc.)",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "input[name='435dea9d-d702-4af5-99f9-f520fc7c76e5']"
+    },
+    {
+      "type": "textarea",
+      "name": "5dd27251-0fb1-4f7b-8489-b68536d46c78",
+      "id": "5dd27251-0fb1-4f7b-8489-b68536d46c78",
+      "label": "What is your primary language",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='5dd27251-0fb1-4f7b-8489-b68536d46c78']"
+    },
+    {
+      "type": "textarea",
+      "name": "5e015b3c-2c9e-41bc-b5e6-a28f768543f0",
+      "id": "5e015b3c-2c9e-41bc-b5e6-a28f768543f0",
+      "label": "Do you have a secondary language?",
+      "placeholder": "Type here...",
+      "required": false,
+      "selector": "textarea[name='5e015b3c-2c9e-41bc-b5e6-a28f768543f0']"
+    },
+    {
+      "type": "textarea",
+      "name": "2a4b601a-8aea-4471-86cc-c031bf48971c",
+      "id": "2a4b601a-8aea-4471-86cc-c031bf48971c",
+      "label": "Desired Annual Salary (or OTE if Sales)",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='2a4b601a-8aea-4471-86cc-c031bf48971c']"
+    },
+    {
+      "type": "textarea",
+      "name": "ff1140c1-1e88-46af-b25b-45591e1da15f",
+      "id": "ff1140c1-1e88-46af-b25b-45591e1da15f",
+      "label": "Are you looking for full-time",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='ff1140c1-1e88-46af-b25b-45591e1da15f']"
+    },
+    {
+      "type": "textarea",
+      "name": "5fb40389-b060-49dd-900f-bd404d566816",
+      "id": "5fb40389-b060-49dd-900f-bd404d566816",
+      "label": "What is your typing speed?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='5fb40389-b060-49dd-900f-bd404d566816']"
+    },
+    {
+      "type": "textarea",
+      "name": "51438187-1634-4359-909b-dfa2a8644cce",
+      "id": "51438187-1634-4359-909b-dfa2a8644cce",
+      "label": "Are you sure you want to join a hard working, fast paced, and fast growing start up?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='51438187-1634-4359-909b-dfa2a8644cce']"
+    },
+    {
+      "type": "textarea",
+      "name": "2c6f8c17-1e66-4e96-a092-836efdc3b5c5",
+      "id": "2c6f8c17-1e66-4e96-a092-836efdc3b5c5",
+      "label": "How good are you at what you do? And what does being great mean to you?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='2c6f8c17-1e66-4e96-a092-836efdc3b5c5']"
+    },
+    {
+      "type": "textarea",
+      "name": "a163e84b-91a5-44ff-a285-ab205a1750e9",
+      "id": "a163e84b-91a5-44ff-a285-ab205a1750e9",
+      "label": "We have an async culture here. How do you feel about it?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='a163e84b-91a5-44ff-a285-ab205a1750e9']"
+    },
+    {
+      "type": "textarea",
+      "name": "ccb6138c-0581-469d-8f8f-8c6b1d752c2f",
+      "id": "ccb6138c-0581-469d-8f8f-8c6b1d752c2f",
+      "label": "We value autonomy at our company. Would you say you thrive in a self-managed environment?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='ccb6138c-0581-469d-8f8f-8c6b1d752c2f']"
+    },
+    {
+      "type": "textarea",
+      "name": "09163395-e645-4ef2-a928-023753e45489",
+      "id": "09163395-e645-4ef2-a928-023753e45489",
+      "label": "Our team works remotely. Have you had experience with remote work, and if so, how was it for you?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='09163395-e645-4ef2-a928-023753e45489']"
+    },
+    {
+      "type": "textarea",
+      "name": "c4db965d-ffad-433f-8e07-10ee3c259251",
+      "id": "c4db965d-ffad-433f-8e07-10ee3c259251",
+      "label": "Travel is a big part of our company culture. Could you share some of your favorite travel experiences?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='c4db965d-ffad-433f-8e07-10ee3c259251']"
+    },
+    {
+      "type": "textarea",
+      "name": "fae3370a-2453-4e64-949c-a24dd67e8c38",
+      "id": "fae3370a-2453-4e64-949c-a24dd67e8c38",
+      "label": "Could you tell us about your current workstation or desk setup?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='fae3370a-2453-4e64-949c-a24dd67e8c38']"
+    },
+    {
+      "type": "textarea",
+      "name": "bf35a96f-931f-4d8a-b618-7e718f297677",
+      "id": "bf35a96f-931f-4d8a-b618-7e718f297677",
+      "label": "We're interested in learning about your approach to work. How would you describe your work ethic?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='bf35a96f-931f-4d8a-b618-7e718f297677']"
+    },
+    {
+      "type": "textarea",
+      "name": "51e2778c-b255-4acb-817e-47f95fc7e0f1",
+      "id": "51e2778c-b255-4acb-817e-47f95fc7e0f1",
+      "label": "Tackling challenging problems is a part of our daily work. Can you share your approach to handling difficult tasks?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='51e2778c-b255-4acb-817e-47f95fc7e0f1']"
+    },
+    {
+      "type": "textarea",
+      "name": "d8812f24-b840-40ba-bf41-26daeb3f2a47",
+      "id": "d8812f24-b840-40ba-bf41-26daeb3f2a47",
+      "label": "Politics can often influence workplace dynamics. What are your thoughts on political discussions at work?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='d8812f24-b840-40ba-bf41-26daeb3f2a47']"
+    },
+    {
+      "type": "textarea",
+      "name": "3ae7df1f-17de-4d1b-b731-c38f22e46656",
+      "id": "3ae7df1f-17de-4d1b-b731-c38f22e46656",
+      "label": "Everyone has their own idea of a perfect job. What does your ideal relationship with work look like?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='3ae7df1f-17de-4d1b-b731-c38f22e46656']"
+    },
+    {
+      "type": "textarea",
+      "name": "46a14898-77af-427f-9961-0ae9330565b8",
+      "id": "46a14898-77af-427f-9961-0ae9330565b8",
+      "label": "We're curious about your career plans. How long do you envision staying with your next company?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='46a14898-77af-427f-9961-0ae9330565b8']"
+    },
+    {
+      "type": "textarea",
+      "name": "555f2203-ce9a-43c7-8f2d-e401ee0e1dc8",
+      "id": "555f2203-ce9a-43c7-8f2d-e401ee0e1dc8",
+      "label": "A day in the life tells us a lot. Could you describe what a typical workday looks like for you?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='555f2203-ce9a-43c7-8f2d-e401ee0e1dc8']"
+    },
+    {
+      "type": "textarea",
+      "name": "c147142f-8c78-441b-ba24-4a8653c683ba",
+      "id": "c147142f-8c78-441b-ba24-4a8653c683ba",
+      "label": "Weekends are important for balance. What does a normal Saturday look like for you?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='c147142f-8c78-441b-ba24-4a8653c683ba']"
+    },
+    {
+      "type": "textarea",
+      "name": "8280aedc-c8cc-44b9-bd58-3dcab50e39de",
+      "id": "8280aedc-c8cc-44b9-bd58-3dcab50e39de",
+      "label": "We're thrilled you're interested in joining Wander! What motivates you to be a part of our team?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='8280aedc-c8cc-44b9-bd58-3dcab50e39de']"
+    },
+    {
+      "type": "textarea",
+      "name": "c26e0111-d15e-4e8c-b6dd-b36aecc4c075",
+      "id": "c26e0111-d15e-4e8c-b6dd-b36aecc4c075",
+      "label": "Technology is at the heart of what we do. How comfortable are you with using computers and various technologies?",
+      "placeholder": "Type here...",
+      "required": true,
+      "selector": "textarea[name='c26e0111-d15e-4e8c-b6dd-b36aecc4c075']"
+    },
+    {
+      "type": "textarea",
+      "name": "g-recaptcha-response",
+      "id": "g-recaptcha-response-100000",
+      "label": "",
+      "placeholder": "",
+      "required": false,
+      "selector": "textarea[name='g-recaptcha-response']"
+    },
+    {
+      "type": "file",
+      "name": "",
+      "id": "_systemfield_resume",
+      "label": "Resume",
+      "required": true,
+      "accept": ".pdf,.doc,.docx,.odt,.rtf,image/*,video/*,audio/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.oasis.opendocument.text,application/rtf",
+      "selector": "input[type='file'][id='_systemfield_resume']"
+    }
+  ],
+  "form_metadata": {
+    "title": "Quality Assurance (QA) Engineer @ Wander",
+    "url": "https://jobs.ashbyhq.com/wander/121c24e0-eeff-49a8-ac56-793d2dbc9fcd/application",
+    "page_heading": "Quality Assurance (QA) Engineer"
+  }
+}
