@@ -114,13 +114,64 @@ Taylor Johnson""",
             elements = self.driver.find_elements(By.CSS_SELECTOR, "input, textarea, select")
             print(f"📋 Found {len(elements)} form elements")
             
+            # First, specifically look for and handle the resume upload field
+            resume_uploaded = False
+            try:
+                resume_input = self.driver.find_element(By.ID, "_systemfield_resume")
+                # File inputs can be hidden but still functional
+                if resume_input and resume_input.is_enabled():
+                    print(f"\n🔄 Resume Upload: Processing resume field")
+                    print(f"   📝 Field details: Visible={resume_input.is_displayed()}, Enabled={resume_input.is_enabled()}")
+                    if os.path.exists(self.resume_path):
+                        try:
+                            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", resume_input)
+                            time.sleep(1)
+                            resume_input.send_keys(self.resume_path)
+                            print(f"   ✅ Uploaded resume: {os.path.basename(self.resume_path)}")
+                            
+                            # Wait for upload confirmation
+                            time.sleep(2)
+                            
+                            # Check if filename appears on page
+                            try:
+                                filename = os.path.basename(self.resume_path)
+                                if filename in self.driver.page_source:
+                                    print(f"   ✅ Confirmed: {filename} appears on page")
+                                else:
+                                    print("   ⚠️  Upload sent but filename not visible (may still be successful)")
+                            except:
+                                pass
+                            
+                            filled_count += 1
+                            resume_uploaded = True
+                        except Exception as upload_error:
+                            print(f"   ❌ Resume upload failed: {upload_error}")
+                    else:
+                        print("   ⚠️  Resume file not found - skipped upload")
+            except:
+                print("🔍 Resume field not found with ID '_systemfield_resume'")
+            
+            print(f"\n📝 Processing remaining {len(elements) - 1 if resume_uploaded else len(elements)} form elements...")
+            
             for i, element in enumerate(elements, 1):
                 try:
-                    if not element.is_displayed() or not element.is_enabled():
-                        continue
-                    
+                    # For file inputs, allow hidden elements (they can still function)
                     tag = element.tag_name.lower()
                     input_type = element.get_attribute("type") or ""
+                    
+                    if tag == "input" and input_type == "file":
+                        if not element.is_enabled():
+                            continue
+                    else:
+                        if not element.is_displayed() or not element.is_enabled():
+                            continue
+                    
+                    # Skip resume field if we already processed it
+                    element_id = element.get_attribute("id") or ""
+                    if element_id == "_systemfield_resume" and resume_uploaded:
+                        print(f"\n🔄 {i}. Skipping already processed resume field")
+                        continue
+                    
                     name = element.get_attribute("name") or ""
                     placeholder = element.get_attribute("placeholder") or ""
                     
@@ -146,9 +197,12 @@ Taylor Johnson""",
                         if tag == "input":
                             if input_type == "file":
                                 if os.path.exists(self.resume_path):
-                                    element.send_keys(self.resume_path)
-                                    print(f"   ✅ Uploaded resume: {os.path.basename(self.resume_path)}")
-                                    filled_count += 1
+                                    try:
+                                        element.send_keys(self.resume_path)
+                                        print(f"   ✅ Uploaded resume: {os.path.basename(self.resume_path)}")
+                                        filled_count += 1
+                                    except Exception as upload_error:
+                                        print(f"   ❌ Resume upload failed: {upload_error}")
                                 else:
                                     print("   ⚠️  Resume file not found - skipped upload")
                             else:
